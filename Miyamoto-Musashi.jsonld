@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP100:IdentityReference",
+            "Link": "CIP100:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Miyamoto-Musashi",
+    "motivations": "I want to become a D-Rep because I believe in the vision of the Cardano blockchain. The opportunity to influence the network's direction inspires me. My passion for decentralization drives me to take an active role and contribute to its success.",
+    "objectives": "As a D-Rep, I aim to contribute to the development of the Cardano ecosystem and represent the community's interests. My goal is to promote transparent and participatory governance and support innovative projects that advance blockchain usage. ",
+    "paymentAddress": "addr_test1qqym9f0lfuf2600ucay4cgcv32yq36amah370tjslj8elupp5k7t456v0dketkjsxeut3c3rcn2pn4pwpefa57jrma9q9awfr4",
+    "qualifications": "I understand the technical aspects of the Cardano ecosystem and recognize their benefits. My analytical skills and interest in blockchain innovations allow me to make informed decisions. I have experience working with stakeholders and understand the importance of communication and strategic thinking to effectively represent the community's interests as a D-Rep.",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Label",
+        "uri": "https://x.com/Miyamoto_Msashi"
+      }
+    ]
+  }
+}
